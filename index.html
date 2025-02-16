@@ -91,6 +91,12 @@
             <li>💸 Send Lolrar for dumb jokes</li>
             <li>🙃 Pay for time wasted on pointless conversations</li>
             <li>🤣 Rate memes and fun content</li>
+            <li>💬 Share a **Lolrar** for funny and awkward comments</li>
+            <li>🎉 Use **Lolrar** as a reward in meme competitions</li>
+            <li>🕒 Pay for time wasted in ridiculous conversations</li>
+            <li>👾 Share **Lolrar** in gaming chats for the best memes</li>
+            <li>💡 Reward the best creative meme ideas with **Lolrar**</li>
+            <li>🔄 Exchange **Lolrar** for fun, not for profit</li>
         </ul>
     </p>
 
@@ -111,6 +117,22 @@
                 document.getElementById('github-link').innerText = 'Посмотреть репозиторий на GitHub';
                 document.getElementById('footer').innerText = 'Создано с ❤️ командой Lolrar';
 
+                // Добавление сценариев использования на русском
+                const usageList = `
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>💸 Отправьте Lolrar за глупые шутки</li>
+                        <li>🙃 Платите за время, потраченное на бессмысленные разговоры</li>
+                        <li>🤣 Оценивайте мемы и веселый контент</li>
+                        <li>💬 Раздавайте **Lolrar** за смешные и неудобные комментарии</li>
+                        <li>🎉 Используйте **Lolrar** как награду в мемных конкурсах</li>
+                        <li>🕒 Платите за время, потраченное на нелепые разговоры</li>
+                        <li>👾 Раздавайте **Lolrar** в игровых чатах за лучшие мемы</li>
+                        <li>💡 Награждайте лучшие идеи мемов **Lolrar**</li>
+                        <li>🔄 Обменивайте **Lolrar** для веселья, а не для прибыли</li>
+                    </ul>
+                `;
+                document.getElementById('description').innerHTML = usageList;
+
                 language = 'ru';
             } else {
                 document.getElementById('title').innerText = 'Welcome to Lolrar Coin (USDL)';
@@ -118,6 +140,22 @@
                 document.getElementById('how-to-use-title').innerText = 'How to use:';
                 document.getElementById('github-link').innerText = 'Check out the GitHub Repository';
                 document.getElementById('footer').innerText = 'Created with ❤️ by the Lolrar Team';
+
+                // Adding use cases in English
+                const usageList = `
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>💸 Send Lolrar for dumb jokes</li>
+                        <li>🙃 Pay for time wasted on pointless conversations</li>
+                        <li>🤣 Rate memes and fun content</li>
+                        <li>💬 Share a **Lolrar** for funny and awkward comments</li>
+                        <li>🎉 Use **Lolrar** as a reward in meme competitions</li>
+                        <li>🕒 Pay for time wasted in ridiculous conversations</li>
+                        <li>👾 Share **Lolrar** in gaming chats for the best memes</li>
+                        <li>💡 Reward the best creative meme ideas with **Lolrar**</li>
+                        <li>🔄 Exchange **Lolrar** for fun, not for profit</li>
+                    </ul>
+                `;
+                document.getElementById('description').innerHTML = usageList;
 
                 language = 'en';
             }
