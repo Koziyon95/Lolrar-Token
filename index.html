@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lolrar Coin (USDL) - Meme Coin</title>
+    <title>Lolrar Coin (USDL) - Мемная криптовалюта</title>
     <link rel="icon" href="https://raw.githubusercontent.com/Koziyon95/Lolrar-Token/refs/heads/main/Lollrar.png" type="image/png"> <!-- Логотип на вкладке -->
-    
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -15,13 +14,11 @@
             padding: 0;
             text-align: center;
         }
-
         h1 {
             color: #f1c40f;
             font-size: 2.5em;
             margin-top: 20px;
         }
-
         p {
             font-size: 1.2em;
             line-height: 1.6;
@@ -29,14 +26,12 @@
             margin: 20px auto;
             color: #555;
         }
-
         img {
             width: 256px;
             height: 256px;
             border-radius: 50%;
             margin: 20px;
         }
-
         .btn {
             display: inline-block;
             background-color: #f1c40f;
@@ -47,11 +42,9 @@
             border-radius: 5px;
             margin-top: 20px;
         }
-
         .btn:hover {
             background-color: #e67e22;
         }
-
         footer {
             background-color: #333;
             color: #fff;
@@ -61,7 +54,6 @@
             bottom: 0;
             width: 100%;
         }
-
         .lang-toggle {
             position: absolute;
             top: 20px;
@@ -69,7 +61,6 @@
             font-size: 1.2em;
             cursor: pointer;
         }
-
         .lang-toggle:hover {
             color: #f1c40f;
         }
@@ -80,84 +71,77 @@
         🌍 EN | RU
     </div>
 
-    <h1 id="title">Welcome to Lolrar Coin (USDL)</h1>
+    <h1 id="title">Добро пожаловать в Lolrar Coin (USDL)</h1>
+    <img src="https://raw.githubusercontent.com/Koziyon95/Lolrar-Token/refs/heads/main/Lollrar.png" alt="Логотип Lolrar">
     
-    <img src="https://raw.githubusercontent.com/Koziyon95/Lolrar-Token/refs/heads/main/Lollrar.png" alt="Lolrar Logo">
-
-    <p id="description"><strong>Lolrar (USDL)</strong> is a fun and lighthearted meme cryptocurrency designed for rating dumb jokes and wasted time. Send Lolrar as a joke, laugh, or just to waste time with friends!</p>
+    <p id="description"><strong>Lolrar (USDL)</strong> — это мемная криптовалюта, предназначенная для веселья, шуток и развлекательных действий. Отправьте Lolrar за глупые шутки, оцените мемы или участвуйте в конкурсах с друзьями!</p>
     
-    <p><strong id="how-to-use-title">How to use:</strong>
+    <p><strong id="how-to-use-title">Как использовать:</strong>
         <ul style="list-style-type: none; padding-left: 0;">
-            <li>💸 Send Lolrar for dumb jokes</li>
-            <li>🙃 Pay for time wasted on pointless conversations</li>
-            <li>🤣 Rate memes and fun content</li>
-            <li>💬 Share a **Lolrar** for funny and awkward comments</li>
-            <li>🎉 Use **Lolrar** as a reward in meme competitions</li>
-            <li>🕒 Pay for time wasted in ridiculous conversations</li>
-            <li>👾 Share **Lolrar** in gaming chats for the best memes</li>
-            <li>💡 Reward the best creative meme ideas with **Lolrar**</li>
-            <li>🔄 Exchange **Lolrar** for fun, not for profit</li>
+            <li>💸 Подарите Lolrar за глупые шутки</li>
+            <li>🙃 Платите за время, потраченное на бессмысленные разговоры</li>
+            <li>🤣 Оцените мемы и весёлый контент</li>
+            <li>🎉 Участвуйте в конкурсах и получайте награды</li>
+            <li>🕹️ Придумайте игры с друзьями с использованием Lolrar</li>
         </ul>
     </p>
 
-    <a href="https://github.com/Koziyon95/Lolrar-Token" class="btn" target="_blank" id="github-link">Check out the GitHub Repository</a>
+    <a href="https://github.com/Koziyon95/Lolrar-Token" class="btn" target="_blank" id="github-link">Посмотреть репозиторий на GitHub</a>
+    <a href="https://dedust.io/swap/TON/EQDQ-9HC12vAZk2VvU3UIb1Fmt7i9NHKdN5jIj07sel3Y82g" class="btn" target="_blank" id="de-dust-link">Купить на DeDust.io</a>
+    <a href="https://dyor.io/ru/minter/EQDQ-9HC12vAZk2VvU3UIb1Fmt7i9NHKdN5jIj07sel3Y82g" class="btn" target="_blank" id="dyor-link">Купить на DYOR.io</a>
 
     <footer>
-        <p id="footer">Created with ❤️ by the Lolrar Team</p>
+        <p id="footer">Создано с ❤️ командой Lolrar</p>
     </footer>
 
     <script>
-        let language = 'en';
+        let language = 'ru';
 
         function toggleLanguage() {
-            if (language === 'en') {
-                document.getElementById('title').innerText = 'Добро пожаловать в Lolrar Coin (USDL)';
-                document.getElementById('description').innerHTML = '<strong>Lolrar (USDL)</strong> — это забавная криптовалюта для оценки глупых шуток и потраченного времени. Отправь Lolrar как шутку, смейся или просто трать время с друзьями!';
-                document.getElementById('how-to-use-title').innerText = 'Как использовать:';
-                document.getElementById('github-link').innerText = 'Посмотреть репозиторий на GitHub';
-                document.getElementById('footer').innerText = 'Создано с ❤️ командой Lolrar';
-
-                // Добавление сценариев использования на русском
-                const usageList = `
-                    <ul style="list-style-type: none; padding-left: 0;">
-                        <li>💸 Отправьте Lolrar за глупые шутки</li>
-                        <li>🙃 Платите за время, потраченное на бессмысленные разговоры</li>
-                        <li>🤣 Оценивайте мемы и веселый контент</li>
-                        <li>💬 Раздавайте **Lolrar** за смешные и неудобные комментарии</li>
-                        <li>🎉 Используйте **Lolrar** как награду в мемных конкурсах</li>
-                        <li>🕒 Платите за время, потраченное на нелепые разговоры</li>
-                        <li>👾 Раздавайте **Lolrar** в игровых чатах за лучшие мемы</li>
-                        <li>💡 Награждайте лучшие идеи мемов **Lolrar**</li>
-                        <li>🔄 Обменивайте **Lolrar** для веселья, а не для прибыли</li>
-                    </ul>
-                `;
-                document.getElementById('description').innerHTML = usageList;
-
-                language = 'ru';
-            } else {
+            if (language === 'ru') {
                 document.getElementById('title').innerText = 'Welcome to Lolrar Coin (USDL)';
                 document.getElementById('description').innerHTML = '<strong>Lolrar (USDL)</strong> is a fun and lighthearted meme cryptocurrency designed for rating dumb jokes and wasted time. Send Lolrar as a joke, laugh, or just to waste time with friends!';
                 document.getElementById('how-to-use-title').innerText = 'How to use:';
                 document.getElementById('github-link').innerText = 'Check out the GitHub Repository';
+                document.getElementById('de-dust-link').innerText = 'Buy on DeDust.io';
+                document.getElementById('dyor-link').innerText = 'Buy on DYOR.io';
                 document.getElementById('footer').innerText = 'Created with ❤️ by the Lolrar Team';
 
-                // Adding use cases in English
+                // Сценарии использования на английском
                 const usageList = `
                     <ul style="list-style-type: none; padding-left: 0;">
                         <li>💸 Send Lolrar for dumb jokes</li>
                         <li>🙃 Pay for time wasted on pointless conversations</li>
                         <li>🤣 Rate memes and fun content</li>
-                        <li>💬 Share a **Lolrar** for funny and awkward comments</li>
-                        <li>🎉 Use **Lolrar** as a reward in meme competitions</li>
-                        <li>🕒 Pay for time wasted in ridiculous conversations</li>
-                        <li>👾 Share **Lolrar** in gaming chats for the best memes</li>
-                        <li>💡 Reward the best creative meme ideas with **Lolrar**</li>
-                        <li>🔄 Exchange **Lolrar** for fun, not for profit</li>
+                        <li>🎉 Participate in contests and win rewards</li>
+                        <li>🕹️ Create games with friends using Lolrar</li>
                     </ul>
                 `;
                 document.getElementById('description').innerHTML = usageList;
 
                 language = 'en';
+            } else {
+                document.getElementById('title').innerText = 'Добро пожаловать в Lolrar Coin (USDL)';
+                document.getElementById('description').innerHTML = '<strong>Lolrar (USDL)</strong> — это мемная криптовалюта, предназначенная для веселья, шуток и развлекательных действий. Отправьте Lolrar за глупые шутки, оцените мемы или участвуйте в конкурсах с друзьями!';
+                document.getElementById('how-to-use-title').innerText = 'Как использовать:';
+                document.getElementById('github-link').innerText = 'Посмотреть репозиторий на GitHub';
+                document.getElementById('de-dust-link').innerText = 'Купить на DeDust.io';
+                document.getElementById('dyor-link').innerText = 'Купить на DYOR.io';
+                document.getElementById('footer').innerText = 'Создано с ❤️ командой Lolrar';
+
+                // Сценарии использования на русском
+                const usageList = `
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>💸 Подарите Lolrar за глупые шутки</li>
+                        <li>🙃 Платите за время, потраченное на бессмысленные разговоры</li>
+                        <li>🤣 Оцените мемы и весёлый контент</li>
+                        <li>🎉 Участвуйте в конкурсах и получайте награды</li>
+                        <li>🕹️ Придумайте игры с друзьями с использованием Lolrar</li>
+                    </ul>
+                `;
+                document.getElementById('description').innerHTML = usageList;
+
+                language = 'ru';
             }
         }
     </script>
