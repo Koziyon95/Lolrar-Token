@@ -6,9 +6,7 @@
     <title>Lolrar Coin (USDL) - Meme Coin</title>
     <link rel="icon" href="https://raw.githubusercontent.com/Koziyon95/Lolrar-Token/refs/heads/main/Lollrar.png" type="image/png"> <!-- Логотип на вкладке -->
     
-    <!-- Основные стили -->
     <style>
-        /* Общие стили для всего тела страницы */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f0f0f0;
@@ -18,31 +16,27 @@
             text-align: center;
         }
 
-        /* Стили для заголовков */
         h1 {
-            color: #f1c40f;  /* Цвет заголовка - желтый */
+            color: #f1c40f;
             font-size: 2.5em;
             margin-top: 20px;
         }
 
-        /* Стили для параграфов */
         p {
             font-size: 1.2em;
             line-height: 1.6;
-            max-width: 600px;
+            max-width: 800px;
             margin: 20px auto;
             color: #555;
         }
 
-        /* Стили для изображения (логотипа) */
         img {
-            width: 256px; /* Размер логотипа */
+            width: 256px;
             height: 256px;
             border-radius: 50%;
             margin: 20px;
         }
 
-        /* Стили для кнопок */
         .btn {
             display: inline-block;
             background-color: #f1c40f;
@@ -58,7 +52,6 @@
             background-color: #e67e22;
         }
 
-        /* Стили для футера */
         footer {
             background-color: #333;
             color: #fff;
@@ -68,19 +61,32 @@
             bottom: 0;
             width: 100%;
         }
+
+        .lang-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .lang-toggle:hover {
+            color: #f1c40f;
+        }
     </style>
 </head>
 <body>
-    <!-- Заголовок страницы -->
-    <h1>Welcome to Lolrar Coin (USDL)</h1>
+    <div class="lang-toggle" onclick="toggleLanguage()">
+        🌍 EN | RU
+    </div>
+
+    <h1 id="title">Welcome to Lolrar Coin (USDL)</h1>
     
-    <!-- Логотип проекта -->
     <img src="https://raw.githubusercontent.com/Koziyon95/Lolrar-Token/refs/heads/main/Lollrar.png" alt="Lolrar Logo">
 
-    <!-- Описание проекта -->
-    <p><strong>Lolrar (USDL)</strong> is a fun and lighthearted meme cryptocurrency designed for rating dumb jokes and wasted time. Send Lolrar as a joke, laugh, or just to waste time with friends!</p>
+    <p id="description"><strong>Lolrar (USDL)</strong> is a fun and lighthearted meme cryptocurrency designed for rating dumb jokes and wasted time. Send Lolrar as a joke, laugh, or just to waste time with friends!</p>
     
-    <p><strong>How to use:</strong> 
+    <p><strong id="how-to-use-title">How to use:</strong>
         <ul style="list-style-type: none; padding-left: 0;">
             <li>💸 Send Lolrar for dumb jokes</li>
             <li>🙃 Pay for time wasted on pointless conversations</li>
@@ -88,12 +94,34 @@
         </ul>
     </p>
 
-    <!-- Кнопка для перехода на другие ресурсы или действия -->
-    <a href="https://github.com/Koziyon95/Lolrar-Token" class="btn" target="_blank">Check out the GitHub Repository</a>
+    <a href="https://github.com/Koziyon95/Lolrar-Token" class="btn" target="_blank" id="github-link">Check out the GitHub Repository</a>
 
-    <!-- Футер -->
     <footer>
-        <p>Created with ❤️ by the Lolrar Team</p>
+        <p id="footer">Created with ❤️ by the Lolrar Team</p>
     </footer>
+
+    <script>
+        let language = 'en';
+
+        function toggleLanguage() {
+            if (language === 'en') {
+                document.getElementById('title').innerText = 'Добро пожаловать в Lolrar Coin (USDL)';
+                document.getElementById('description').innerHTML = '<strong>Lolrar (USDL)</strong> — это забавная криптовалюта для оценки глупых шуток и потраченного времени. Отправь Lolrar как шутку, смейся или просто трать время с друзьями!';
+                document.getElementById('how-to-use-title').innerText = 'Как использовать:';
+                document.getElementById('github-link').innerText = 'Посмотреть репозиторий на GitHub';
+                document.getElementById('footer').innerText = 'Создано с ❤️ командой Lolrar';
+
+                language = 'ru';
+            } else {
+                document.getElementById('title').innerText = 'Welcome to Lolrar Coin (USDL)';
+                document.getElementById('description').innerHTML = '<strong>Lolrar (USDL)</strong> is a fun and lighthearted meme cryptocurrency designed for rating dumb jokes and wasted time. Send Lolrar as a joke, laugh, or just to waste time with friends!';
+                document.getElementById('how-to-use-title').innerText = 'How to use:';
+                document.getElementById('github-link').innerText = 'Check out the GitHub Repository';
+                document.getElementById('footer').innerText = 'Created with ❤️ by the Lolrar Team';
+
+                language = 'en';
+            }
+        }
+    </script>
 </body>
 </html>
