@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lolrar Coin (USDL) - Мемная криптовалюта</title>
+    <title>Lolrar Coin (USDL) - Meme Cryptocurrency</title>
     <link rel="icon" href="https://raw.githubusercontent.com/Koziyon95/Lolrar-Token/refs/heads/main/Lollrar.png" type="image/png">
     <style>
         body {
@@ -54,16 +54,6 @@
             bottom: 0;
             width: 100%;
         }
-        .lang-toggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
-        .lang-toggle:hover {
-            color: #f1c40f;
-        }
         .section {
             margin: 30px auto;
             text-align: left;
@@ -75,28 +65,25 @@
     </style>
 </head>
 <body>
-    <div class="lang-toggle" onclick="toggleLanguage()">
-        🌍 EN | RU
-    </div>
 
     <div>
-        <a href="https://dedust.io/swap/TON/EQDQ-9HC12vAZk2VvU3UIb1Fmt7i9NHKdN5jIj07sel3Y82g" class="btn" target="_blank">Купить на DeDust.io</a>
-        <a href="https://dyor.io/ru/minter/EQDQ-9HC12vAZk2VvU3UIb1Fmt7i9NHKdN5jIj07sel3Y82g" class="btn" target="_blank">Купить на DYOR.io</a>
+        <a href="https://dedust.io/swap/TON/EQDQ-9HC12vAZk2VvU3UIb1Fmt7i9NHKdN5jIj07sel3Y82g" class="btn" target="_blank">Buy on DeDust.io</a>
+        <a href="https://dyor.io/ru/minter/EQDQ-9HC12vAZk2VvU3UIb1Fmt7i9NHKdN5jIj07sel3Y82g" class="btn" target="_blank">Buy on DYOR.io</a>
     </div>
 
-    <h1 id="title">Welcome to Lolrar Coin (USDL)</h1>
+    <h1>Welcome to Lolrar Coin (USDL)</h1>
     <img src="https://raw.githubusercontent.com/Koziyon95/Lolrar-Token/refs/heads/main/Lollrar.png" alt="Lolrar Logo">
 
     <div class="section" id="project-goal">
         <h2>Project Goal</h2>
-        <p><strong>Lolrar Coin (USDL)</strong> is a fun and lighthearted meme cryptocurrency created to bring humor into the world of cryptocurrency. We’re not here for financial gain, but to give users a fun way to interact with crypto, share jokes, rate memes, and participate in funny contests. <strong>This is not an investment token.</strong> Our project is about making your time in crypto fun and enjoyable while becoming part of a community where humor and fun come first!</p>
+        <p><strong>Lolrar Coin (USDL)</strong> is a meme cryptocurrency created to add fun and humor to the crypto world. It's not about financial gain — it’s all about enjoying jokes, memes, and participating in funny contests. <strong>This is not an investment token</strong>, but rather a fun and lighthearted way to interact with the crypto community!</p>
     </div>
 
     <div class="section" id="how-to-use">
         <h2>How to use</h2>
         <p><strong>Lolrar Coin (USDL)</strong> is your way to bring fun into every crypto interaction. Here’s how you can use our token:</p>
         <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
-            <li>💸 <strong>Send Lolrar</strong> for dumb jokes to your friends and community members.</li>
+            <li>💸 <strong>Send Lolrar</strong> for funny jokes to your friends and community members.</li>
             <li>🙃 <strong>Pay for wasted time</strong> in pointless discussions.</li>
             <li>🤣 <strong>Rate memes</strong> and fun content shared by others.</li>
             <li>🎉 <strong>Join contests</strong> and win Lolrar for the most creative memes.</li>
@@ -104,59 +91,14 @@
         </ul>
     </div>
 
+    <div class="section">
+        <h2>Why Lolrar?</h2>
+        <p><strong>The price is negligible!</strong> Since Lolrar Coin (USDL) is designed for fun, the value is intentionally low, making it perfect for sending and receiving for jokes, memes, and playful contests. It’s not about making money, it’s about sharing laughs and having a good time in the crypto community!</p>
+    </div>
+
     <footer>
-        <p id="footer">Created with ❤️ by the Lolrar Team</p>
+        <p>Created with ❤️ by the Lolrar Team</p>
     </footer>
 
-    <script>
-        let language = localStorage.getItem('language') || 'en';
-
-        function toggleLanguage() {
-            if (language === 'en') {
-                document.getElementById('title').innerText = 'Добро пожаловать в Lolrar Coin (USDL)';
-                document.getElementById('project-goal').innerHTML = `
-                    <h2>Цель проекта</h2>
-                    <p><strong>Lolrar Coin (USDL)</strong> — мемная криптовалюта, предназначенная для веселья, шуток и развлекательных действий. Отправьте Lolrar за глупые шутки, оцените мемы или участвуйте в конкурсах с друзьями!</p>
-                `;
-                document.getElementById('how-to-use').innerHTML = `
-                    <h2>Как использовать</h2>
-                    <p><strong>Lolrar Coin (USDL)</strong> — ваш способ добавить веселья в каждый момент общения в криптовалютном мире. Вот как вы можете использовать наш токен:</p>
-                    <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
-                        <li>💸 Подарите Lolrar за глупые шутки вашим друзьям и участникам сообщества.</li>
-                        <li>🙃 Платите за время, потраченное на бессмысленные разговоры.</li>
-                        <li>🤣 Оцените мемы и весёлый контент.</li>
-                        <li>🎉 Участвуйте в конкурсах и получайте Lolrar за самые креативные мемы.</li>
-                        <li>🕹️ Придумайте игры с друзьями с использованием Lolrar.</li>
-                    </ul>
-                `;
-                document.getElementById('footer').innerText = 'Создано с ❤️ командой Lolrar';
-                language = 'ru';
-            } else {
-                document.getElementById('title').innerText = 'Welcome to Lolrar Coin (USDL)';
-                document.getElementById('project-goal').innerHTML = `
-                    <h2>Project Goal</h2>
-                    <p><strong>Lolrar Coin (USDL)</strong> is a fun and lighthearted meme cryptocurrency created to bring humor into the world of cryptocurrency. We’re not here for financial gain, but to give users a fun way to interact with crypto, share jokes, rate memes, and participate in funny contests. <strong>This is not an investment token.</strong> Our project is about making your time in crypto fun and enjoyable while becoming part of a community where humor and fun come first!</p>
-                `;
-                document.getElementById('how-to-use').innerHTML = `
-                    <h2>How to use</h2>
-                    <p><strong>Lolrar Coin (USDL)</strong> is your way to bring fun into every crypto interaction. Here’s how you can use our token:</p>
-                    <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
-                        <li>💸 <strong>Send Lolrar</strong> for dumb jokes to your friends and community members.</li>
-                        <li>🙃 <strong>Pay for wasted time</strong> in pointless discussions.</li>
-                        <li>🤣 <strong>Rate memes</strong> and fun content shared by others.</li>
-                        <li>🎉 <strong>Join contests</strong> and win Lolrar for the most creative memes.</li>
-                        <li>🕹️ <strong>Play games with friends</strong>: create fun challenges and exchange Lolrar for participation.</li>
-                    </ul>
-                `;
-                document.getElementById('footer').innerText = 'Created with ❤️ by the Lolrar Team';
-                language = 'en';
-            }
-
-            localStorage.setItem('language', language);
-        }
-
-        // Initialize language on page load
-        toggleLanguage();
-    </script>
 </body>
 </html>
